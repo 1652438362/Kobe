@@ -9,8 +9,8 @@ void main()
 
 	 while((a[i]=getchar())!='\n')
 	 {
-          k++;
-          i++;
+              k++;
+              i++;
 	 }
      
 	 printf("Please input the word you want to find:\n");
@@ -18,29 +18,29 @@ void main()
 
 	 while((word[i]=getchar())!='\n')
 	 {
-          y++;
-          i++;
+              y++;
+              i++;
 	 }
 
 	 for (i=0;i<k;i++)
 	 {
-		 count=0;
+	     count=0;
          if(a[i]==word[0])
-		 {
+	  {
             for(j=0;j<y;j++)
-			{
+	      {
                if(a[i+j]==word[j])
-			   {
+	        {
                   count++;
-			   }
-			}
+	        }
+	      }
                if(count==y)
-			   {
-		          sum++;
-			   }
-		 }
+	        {
+		  sum++;
+	        }
+	   }
 		 
-	 }
+	  }
 
 	 printf("The number of words you find is %d.\n",sum);
 }
